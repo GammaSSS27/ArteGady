@@ -1,0 +1,132 @@
+/* ------------------------- */
+/* Reset básico y body       */
+/* ------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf6e3; /* color de fondo suave */
+    color: #333;
+    text-align: center;
+}
+
+/* ------------------------- */
+/* Header                     */
+/* ------------------------- */
+header {
+    background: linear-gradient(90deg, #ff6f61, #ffb347);
+    color: white;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* ------------------------- */
+/* Sección de productos      */
+/* ------------------------- */
+#productos {
+    padding: 40px 20px;
+}
+
+#productos h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #ff6f61;
+}
+
+/* ------------------------- */
+/* Grid de productos         */
+/* ------------------------- */
+.grid-productos {
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    gap: 20px; /* espacio entre productos */
+    flex-wrap: wrap; /* permite que baje a otra fila si no cabe */
+}
+
+/* ------------------------- */
+/* Tarjetas de productos     */
+/* ------------------------- */
+.producto {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 220px; /* ancho fijo para que se alineen mejor */
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    margin: 15px 0 10px;
+    color: #ff6f61;
+}
+
+.precio {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* ------------------------- */
+/* Botones                   */
+/* ------------------------- */
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3b2e;
+}
+
+/* ------------------------- */
+/* Footer                    */
+/* ------------------------- */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+}
+
+footer .redes a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer .redes a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
